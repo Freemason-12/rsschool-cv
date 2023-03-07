@@ -6,7 +6,7 @@
 * *Second GitHub Account:* https://github.com/Maksat-Rsymbetov
 
 ##About me
-Student of Suleyman Demirel University, hobbyist, Linux power user, likes drawing, 3D modelling, design, coding and solving problems.
+Hobbyist, Linux power user, likes drawing, 3D modelling, design, coding and solving problems.
 
 ##Skills
  * Java
@@ -60,5 +60,8 @@ Currently working as a teacher at CRTL+A School
 ###Projects
 * *Minesweeper game:* a traditional minesweeper 8x8 game written in JavaScript
   _GitHub source code: https://github.com/Maksat-Rsymbetov/SENSEI_
+
+##Education
+Student of Suleyman Demirel Unviersity
 
 *English level:* B2
