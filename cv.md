@@ -10,7 +10,7 @@ Hobbyist, Linux power user, likes drawing, 3D modelling, design, coding and solv
 
 ##Skills
  * Java
- * Go (basic)
+ * Go
  * JavaScript 
  * Python (basic)
  * HTML 

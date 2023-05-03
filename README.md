@@ -1,1 +1,1 @@
-https://Freemason-12.github.io/rsschool-cv/cv
+https://Freemason-12.github.io/rsschool-cv
