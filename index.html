@@ -7,12 +7,15 @@
     <link href="./style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
+    <header class="header bottom-line">
+      <input type="checkbox" id="theme-toggle" />
       <img class="avatar" src="./assets/avatar.jpg" alt="Avatar">
-      <h1>Maksat Rsymbetov</h1>
-      <p>Frontend Developer</p>
+      <div>
+        <h1>Maksat Rsymbetov</h1>
+        <div>Frontend Developer</div>
+      </div>
     </header>
-    <main>
+    <main class="bottom-line">
       <section>
         <h2>Summary</h2>
         <p>
@@ -121,10 +124,16 @@
           </div>
         </div>
         <div>
-          <h3>Course The Rolling Scopes School JavaScript/Front-End Pre-School 2023 Q2</h3>
-          <p>Student Front-end Development</p>
-          <nav>Almaty, Kazakhstan</nav>
-          <nav>Jul 2023 -- Nov 2024</nav>
+          <div class="cv-header">
+            <div>
+              <h3>Course The Rolling Scopes School JavaScript/Front-End Pre-School 2023 Q2</h3>
+              <p>Student Front-end Development</p>
+            </div>
+            <div>
+              <nav>Almaty, Kazakhstan</nav>
+              <nav>Jul 2023 -- Nov 2024</nav>
+            </div>
+          </div>
         </div>
       </section>
       <section>
@@ -181,7 +190,7 @@
         </div>
       </section>
       <section>
-        <h2>technical Skills</h2>
+        <h2>Technical Skills</h2>
         <nav><b>Languages:</b>JavaScript, TypeScript, HTML/CSS, Sass, SCSS, JSON, SVG</nav>
         <nav><b>Frameworks:</b>React, Vue 2/3, Redux, Pinia, PrimeVue, PrimeReact, Tailwindcss, Vite, Webpack, Nuxt</nav>
         <nav><b>Developer Tools:</b>Git, Linux, Jira, Figma, HTTP, WebSocket, Cors, REST API, AJAX, Cdn, DOM, DOM-events</nav>

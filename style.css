@@ -1,14 +1,80 @@
+:root {
+  --dark: #224455;
+  --light: #ffeedd;
+  /* --bg-light: var(--light); */
+  /* --bg-dark: var(--dark); */
+  /* --text-light: var(--dark); */
+  /* --text-dark: var(--light); */
+}
+
+#theme-toggle {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  background: var(--dark);
+}
+
+#theme-toggle:checked {
+  background: var(--light);
+}
+
+body:has(#theme-toggle) {
+  background: var(--light);
+  color: var(--dark);
+}
+
+body:has(#theme-toggle:checked) {
+  background: var(--dark);
+  color: var(--light);
+}
+
+.bottom-line {
+  border-bottom: 1px dotted var(--dark);
+}
+
+body:has(#theme-toggle:checked) .bottom-line {
+  border-bottom: 1px dotted var(--light);
+}
+
+a {
+  color: var(--dark);
+  text-decoration-line: underline;
+}
+
+body:has(#theme-toggle:checked) a {
+  color: var(--light);
+  text-decoration-line: underline;
+}
+
 html {
   font-family: sans-serif;
 }
 
+body {
+  margin: 0px;
+}
+
+header,
+main,
+footer {
+  padding: 1rem;
+}
+
+
 .header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  backdrop-filter: blur(20px);
 }
 
 .avatar {
-  width: 6rem;
-  height: 6rem;
+  width: 2rem;
+  height: 2rem;
   display: inline-block;
   border-radius: 50%;
 }
