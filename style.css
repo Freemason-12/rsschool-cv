@@ -1,20 +1,26 @@
 :root {
   --dark: #224455;
   --light: #ffeedd;
-  /* --bg-light: var(--light); */
-  /* --bg-dark: var(--dark); */
-  /* --text-light: var(--dark); */
-  /* --text-dark: var(--light); */
 }
 
-#theme-toggle {
+#theme-toggle-button {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 3rem;
+  right: 1rem;
   appearance: none;
   width: 2rem;
   height: 2rem;
-  background: var(--dark);
+}
+
+.icon-theme-dark,
+.icon-theme-light {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+
+#theme-toggle {
+  display: none;
 }
 
 #theme-toggle:checked {
@@ -49,12 +55,28 @@ body:has(#theme-toggle:checked) a {
   text-decoration-line: underline;
 }
 
+body:has(#theme-toggle:checked) .icon-theme-dark,
+.icon-theme-light {
+  display: none;
+}
+
+body:has(#theme-toggle:checked) .icon-theme-light,
+.icon-theme-dark {
+  display: block;
+}
+
 html {
+  background: var(--dark);
   font-family: sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 body {
   margin: 0px;
+  max-width: 768px;
+  border-left: 1px dotted var(--light);
+  border-right: 1px dotted var(--light);
 }
 
 header,
@@ -68,6 +90,7 @@ footer {
   display: flex;
   align-items: center;
   position: sticky;
+  gap: 10px;
   top: 0px;
   backdrop-filter: blur(20px);
 }
