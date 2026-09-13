@@ -93,6 +93,7 @@ footer {
   gap: 10px;
   top: 0px;
   backdrop-filter: blur(20px);
+  padding-right: 3.2rem;
 }
 
 .avatar {
