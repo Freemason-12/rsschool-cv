@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Maksat Rsymbetov Frontend Developer CV</title>
     <link href="./style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs-themes@1.0.0/solarized_dark.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.12.0/build/highlight.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.12.0/build/languages/javascript.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+
   </head>
   <body>
+
     <svg style="display: none" aria-hidden="true">
       <symbol id="light-icon" viewBox="0 0 20 20" fill="none">
         <path d="M10 17C10.4142 17 10.75 17.3358 10.75 17.75V19.25C10.75 19.6642 10.4142 20 10 20C9.58579 20 9.25 19.6642 9.25 19.25V17.75C9.25 17.3358 9.58579 17 10 17ZM3.96973 14.9697C4.26257 14.6771 4.73743 14.6771 5.03027 14.9697C5.32288 15.2626 5.32288 15.7374 5.03027 16.0303L3.9707 17.0898C3.67788 17.3827 3.20307 17.3825 2.91016 17.0898C2.61748 16.7969 2.61733 16.3221 2.91016 16.0293L3.96973 14.9697ZM14.9697 14.9697C15.2626 14.6768 15.7374 14.6768 16.0303 14.9697L17.0898 16.0293C17.3827 16.3222 17.3827 16.797 17.0898 17.0898C16.797 17.3827 16.3222 17.3827 16.0293 17.0898L14.9697 16.0303C14.6768 15.7374 14.6768 15.2626 14.9697 14.9697ZM10 4.25C13.1756 4.25 15.75 6.82436 15.75 10C15.75 13.1756 13.1756 15.75 10 15.75C6.82436 15.75 4.25 13.1756 4.25 10C4.25 6.82436 6.82436 4.25 10 4.25ZM10 5.75C7.65279 5.75 5.75 7.65279 5.75 10C5.75 12.3472 7.65279 14.25 10 14.25C12.3472 14.25 14.25 12.3472 14.25 10C14.25 7.65279 12.3472 5.75 10 5.75ZM2.25 9.25C2.66421 9.25 3 9.58579 3 10C3 10.4142 2.66421 10.75 2.25 10.75H0.75C0.335786 10.75 0 10.4142 0 10C0 9.58579 0.335786 9.25 0.75 9.25H2.25ZM19.25 9.25C19.6642 9.25 20 9.58579 20 10C20 10.4142 19.6642 10.75 19.25 10.75H17.75C17.3358 10.75 17 10.4142 17 10C17 9.58579 17.3358 9.25 17.75 9.25H19.25ZM2.91016 2.91016C3.20305 2.61726 3.67781 2.61726 3.9707 2.91016L5.03027 3.96973C5.32271 4.26266 5.32301 4.73753 5.03027 5.03027C4.73753 5.32298 4.26265 5.3227 3.96973 5.03027L2.91016 3.9707C2.61727 3.67782 2.61729 3.20305 2.91016 2.91016ZM16.0293 2.91016C16.3221 2.61733 16.7969 2.61748 17.0898 2.91016C17.3825 3.20307 17.3827 3.67789 17.0898 3.9707L16.0303 5.03027C15.7374 5.32284 15.2626 5.32284 14.9697 5.03027C14.6771 4.73744 14.6771 4.26257 14.9697 3.96973L16.0293 2.91016ZM10 0C10.4142 0 10.75 0.335786 10.75 0.75V2.25C10.75 2.66421 10.4142 3 10 3C9.58579 3 9.25 2.66421 9.25 2.25V0.75C9.25 0.335786 9.58579 0 10 0Z" fill="currentColor"/>
@@ -17,7 +26,18 @@
         <path d="M8.24303 1.36797C8.79397 1.24909 9.27773 1.50818 9.53307 1.89434C9.78342 2.27318 9.83494 2.79892 9.5653 3.25469C8.98007 4.24347 8.70769 5.43992 8.8983 6.71856C9.23059 8.94687 11.0512 10.7669 13.2801 11.1004C14.5589 11.2911 15.7554 11.0203 16.745 10.4354L16.9178 10.3494C17.329 10.1809 17.773 10.2468 18.1053 10.4666C18.4681 10.7066 18.7183 11.1469 18.6512 11.6541L18.6327 11.7566C17.7119 16.0499 13.6478 19.1774 8.96276 18.5906C5.06148 18.102 1.89771 14.9392 1.40905 11.0379C0.822018 6.3526 3.95005 2.28885 8.24303 1.367V1.36797ZM8.01354 2.97344C4.73946 3.94828 2.43655 7.16591 2.8983 10.8514C3.30172 14.072 5.92863 16.699 9.14928 17.1023C12.8347 17.5639 16.0502 15.2598 17.0243 11.9861C15.8504 12.5568 14.4887 12.7978 13.0594 12.5848H13.0585C10.1777 12.154 7.84463 9.82167 7.41491 6.94024C7.2016 5.51 7.44215 4.147 8.01354 2.97344Z" fill="currentColor"/>
       </symbol>
     </svg>
+
     <header class="header bottom-line">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#main-info">Main</a></li>
+          <li><a href="#work-exprerience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#technical-skills">Skills</a></li>
+        </ul>
+      </nav>
       <div id="theme-toggle-button">
         <label for="theme-toggle">
           <svg class="icon-theme-dark"><use href="#light-icon" ></use></svg>
@@ -25,14 +45,18 @@
         </label>
         <input type="checkbox" id="theme-toggle" />
       </div>
-      <img class="avatar" src="./assets/avatar.jpg" alt="Avatar">
-      <div>
-        <h1>Maksat Rsymbetov</h1>
-        <div>Frontend Developer</div>
-      </div>
     </header>
+
     <main class="bottom-line">
-      <section>
+      <section id="home" class="avatar-info">
+        <img class="avatar" src="./assets/avatar.jpg" alt="Avatar">
+        <div>
+          <h1>Maksat Rsymbetov</h1>
+          <div>Frontend Developer</div>
+        </div>
+      </section>
+
+      <section id="main-info">
         <h2>Summary</h2>
         <p>
           Frontend Developer with 3 years of commercial experience. Worked in an academic field and a construction firm. Worked with both external and internal products. Participated in development of platofrms such as SDU PMS (Personnel Management System), SDU Admissions, SDU HR and advertising websites (Galamat Residential Complex).<br><br>
@@ -52,7 +76,8 @@
           I live and work in Almaty, Kazakhstan. Considering jobs in office/hybrid jobs in Almaty or remote worldwide.<br><br>
         </p>
       </section>
-      <section>
+
+      <section id="work-exprerience">
         <h2>Work experience</h2>
         <div>
           <div class="cv-header">
@@ -115,7 +140,7 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section id="education">
         <h2>Education</h2>
         <div class="cv-header">
           <div>
@@ -152,7 +177,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="projects">
         <h2>Projects</h2>
         <div>
           <div class="cv-header">
@@ -205,23 +230,45 @@
           </ul>
         </div>
       </section>
-      <section>
-        <h2>Technical Skills</h2>
+      <section class="code-example">
+        <h2>Code example</h2>
+        <p>Here's the example of the <a href="https://www.codewars.com/kata/513e08acc600c94f01000001">RGB to HEX conversion in CodeWars</a></p>
+        <pre>
+          <code class="language-javascript">
+            function rgb(r, g, b){
+              r = r < 0 ? 0 : r > 255 ? 255 : r
+              g = g < 0 ? 0 : g > 255 ? 255 : g
+              b = b < 0 ? 0 : b > 255 ? 255 : b
+              let rr = r.toString(16); rr = rr.length<2? '0'+rr:rr
+              let gg = g.toString(16); gg = gg.length<2? '0'+gg:gg
+              let bb = b.toString(16); bb = bb.length<2? '0'+bb:bb
+              return `${rr}${gg}${bb}`.toUpperCase()
+            }
+          </code>
+        </pre>
+      </section>
+      <section id="technical-skills">
+        <h2>Skills</h2>
         <nav><b>Languages:</b>JavaScript, TypeScript, HTML/CSS, Sass, SCSS, JSON, SVG</nav>
         <nav><b>Frameworks:</b>React, Vue 2/3, Redux, Pinia, PrimeVue, PrimeReact, Tailwindcss, Vite, Webpack, Nuxt</nav>
         <nav><b>Developer Tools:</b>Git, Linux, Jira, Figma, HTTP, WebSocket, Cors, REST API, AJAX, Cdn, DOM, DOM-events</nav>
+        <nav><b>English Level: </b>B2+ (Upper Intermediate)</nav>
       </section>
-    </main>
-    <footer>
-      <section>
+      <section id="contacts">
         <h2>Contacts</h2>
         <ul>
           <li><a href="mailto:maksat.rsymbetov@proton.me">maksat.rsymbetov@proton.me</a></li>
           <li><a href="https://linkedin.com/in/maksat-rsymbetov-36801a275">linkedin.com/in/maksat-rsymbetov-36801a275</a></li>
           <li><a href="https://github.com/Freemason-12">github.com/Freemason-12</a></li>
         </ul>
-        <div></div>
       </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="https://github.com/Freemason-12">Github</a></li>
+        <li>2026</li>
+        <li><a href="https://rs.school/courses/short-track"><img class="rs-logo" src="./assets/logo.svg" alt="course logo" /></a></li>
+      </ul>
     </footer>
   </body>
 </html>
