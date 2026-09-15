@@ -43,7 +43,7 @@
           <svg class="icon-theme-dark"><use href="#light-icon" ></use></svg>
           <svg class="icon-theme-light"><use href="#dark-icon" ></use></svg>
         </label>
-        <input type="checkbox" id="theme-toggle" />
+        <input type="checkbox" id="theme-toggle">
       </div>
     </header>
 
@@ -236,12 +236,12 @@
         <pre>
           <code class="language-javascript">
             function rgb(r, g, b){
-              r = r &lt 0 ? 0 : r &gt 255 ? 255 : r
-              g = g &lt 0 ? 0 : g &gt 255 ? 255 : g
-              b = b &lt 0 ? 0 : b &gt 255 ? 255 : b
-              let rr = r.toString(16); rr = rr.length&lt2? '0'+rr:rr
-              let gg = g.toString(16); gg = gg.length&lt2? '0'+gg:gg
-              let bb = b.toString(16); bb = bb.length&lt2? '0'+bb:bb
+              r = r &lt; 0 ? 0 : r &gt; 255 ? 255 : r
+              g = g &lt; 0 ? 0 : g &gt; 255 ? 255 : g
+              b = b &lt; 0 ? 0 : b &gt; 255 ? 255 : b
+              let rr = r.toString(16); rr = rr.length&lt;2? '0'+rr:rr
+              let gg = g.toString(16); gg = gg.length&lt;2? '0'+gg:gg
+              let bb = b.toString(16); bb = bb.length&lt;2? '0'+bb:bb
               return `${rr}${gg}${bb}`.toUpperCase()
             }
           </code>
